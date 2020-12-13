@@ -1,4 +1,4 @@
-# BCHAKATHON
+# BCHACKATHON
 
 42-hours BetterCollective Hackathon 
 
