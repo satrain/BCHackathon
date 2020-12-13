@@ -1,0 +1,338 @@
+@import url('https://fonts.googleapis.com/css?family=Trade+Winds&display=swap');
+
+body{
+  font-family: "Poppins", sans-serif;
+  min-width: 100vw;
+  min-height: 100vh;
+  background: #BCDDB2 url(assets/images/bgd.jpg);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-position-y: 100px;
+  overflow-x: hidden !important;
+}
+
+:root{
+  --heading1: 30px;
+}
+
+#logo{
+  font-family: "Poppins", sans-serif;
+  color: #000000;
+  box-shadow: none;
+  font-size: 20px;
+
+  width: 100px;
+  height: 100px;
+  background: url('assets/images/eveco-logo.png');
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position-y: -10px;
+}
+
+.custommodal {
+  display: none; /* Hidden by default */
+  position: fixed; /* Stay in place */
+  z-index: 1; /* Sit on top */
+  left: 0;
+  top: 0;
+  width: 100%; /* Full width */
+  height: 100%; /* Full height */
+  overflow: auto; /* Enable scroll if needed */
+  background-color: rgb(0,0,0); /* Fallback color */
+  background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
+}
+
+/* Modal Content/Box */
+.custommodal-content {
+  background-color: #fefefe;
+  margin: 5% auto; 
+  padding: 20px;
+  border: 1px solid #888;
+  width: 80%; /* Could be more or less, depending on screen size */
+}
+
+/* The Close Button */
+.close {
+  color: #aaa;
+  float: right;
+  font-size: 28px;
+  font-weight: bold;
+}
+
+.close:hover,
+.close:focus {
+  color: black;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+.filtered{
+  display: none !important;
+}
+  
+.navLogin{
+  text-decoration: none;
+  color: #000000;
+  font-weight: 400;
+  text-transform: capitalize;
+  margin: 0 !important;
+}
+
+/* removing unnecessary */
+
+nav {
+  color: #000000;
+  box-shadow: none;
+}
+
+.btn{
+  box-shadow: none;
+  background-color: transparent;
+  font-size: 20px;
+}
+
+.btn:hover{
+  box-shadow: none;
+  background-color: transparent;
+}
+
+.btn:focus{
+  box-shadow: none;
+  background-color: transparent;
+}
+
+nav ul a{
+  color: #000000;
+}
+
+nav ul a{
+  color: #000000;
+}
+
+/* .searchIcon{
+  content: "&#x1F50D";
+} */
+
+.navLogout{
+  font-size: 16px;
+}
+
+.search-form{
+  position: relative;
+  overflow: hidden;
+}
+
+.search-input{
+  opacity: .7;
+}
+
+.search-input:focus{
+  opacity: 1;
+  padding-left: 10px !important;
+}
+
+.search-input:focus ~ #searchIcon {
+  display: none;
+}
+
+.search-input{
+  background-color: #F6F6F6 !important;
+  border: none !important;
+  border-bottom: none !important;
+  box-shadow: none !important;
+  margin: 0 !important;
+  padding: 0px 5px 0px 45px !important;
+}
+
+.search-input::before{
+  content: "";
+  width: 30px !important;
+  height: 30px !important;
+  position: absolute;
+  top: 5px;
+  left: 5px;
+  z-index: 10;
+  background: #000000 url(assets/images/Vector.svg);
+  background-size: 100% 100% !important;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+
+.search-form h1{
+  font-size: var(--heading1);
+  color: #000000;
+  text-transform: uppercase;
+  line-height: 1;
+  margin: 0px 0px 0px 0px;
+  display: block;
+  text-align: center;
+  margin: 100px 0px 35px 0px;
+}
+
+#searchIcon{
+  width: 35px !important;
+  height: 35px !important;
+  position: absolute;
+  bottom: 5px;
+  left: 5px;
+  z-index: 3;
+  background: url(assets/images/Vector.svg);
+  background-repeat: no-repeat;
+  background-position: center;
+  transition: .2s ease-out;
+}
+
+
+.guides {
+  display: flex;
+  flex-direction: row !important;
+  flex-wrap: wrap !important;
+  width: 100%;
+  padding-top: 20px;
+
+  transform: translateX(-200%);
+  transition: .5s;
+}
+
+/*.guides li {
+  width: 376px;
+  margin-left: 0 !important;
+} */
+
+.event-card-box {
+  width: 375px;
+  background: #fff;
+  margin-top: 25px;
+  margin-left: 37px;
+}
+
+.event-img {
+  width: 100%;
+  height: 200px;
+  /* background: url(https://www.history.com/.image/c_fit%2Ccs_srgb%2Cfl_progressive%2Cq_auto:good%2Cw_620/MTU3ODc5MDg1NjI5OTA4Mjk3/nature-pollution.jpg); */
+
+  display: flex;
+  justify-content: flex-end;
+}
+
+.event-time {
+  width: 135px;
+  height: 70px;
+  margin-top: 29px;
+
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  justify-content: space-between;
+}
+
+.event-calendar,
+.event-clock {
+  width: 100%;
+  height: 31px;
+  background: #95c500;
+  color:  #fff;
+
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  align-items: center;
+}
+
+.event-calendar img,
+.event-clock img {
+  margin-right: 7px;
+  margin-left: 8px;
+}
+
+.event-heading {
+  display: block;
+  margin: 12px 14px 16px;
+
+  font-family: 'Titillium Web', sans-serif;
+  font-size: 24px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 30px;
+  letter-spacing: 0em;
+  text-align: left;
+}
+
+.event-copy {
+  height: 260px;
+}
+
+.event-copy p {
+  margin-left: 14px;
+  margin-right: 14px;
+}
+
+.event-card-location {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  padding-right: 14px;
+  padding-bottom: 8px;
+  padding-top: 8px;
+  border-top: 1px solid #dcd7d7;
+}
+
+
+/* FORMS */
+
+.custommodal {
+  z-index: 10;
+}
+
+@media (min-width: 1280px) and (max-width: 1765px) {
+  .guides {
+    justify-content: space-around;
+  }
+}
+
+@media (min-width: 993px) and (max-width: 1177px) {
+  .guides {
+    justify-content: center;
+  }
+}
+
+@media (min-width: 883px) and (max-width: 1024px) {
+  .guides {
+    justify-content: space-between !important;
+  }
+}
+
+@media (min-width: 883px) and (max-width: 969px) {
+  .guides {
+    justify-content: center !important;
+  }
+}
+
+@media screen and (max-width: 882px) {
+  h1 {
+    font-size: 26px !important;
+  }
+
+  .search-form h1 {
+    margin: 100px 0px 25px 0px;
+  }
+
+  .guides {
+    justify-content: center !important;
+  }
+
+  .event-card-box {
+    margin-left: 0 !important;
+  }
+
+  nav .brand-logo {
+    left: auto;
+    right: 20px !important;
+    transform: none !important;
+  }
+
+  nav .sidenav-trigger {
+    margin: 26px 18px !important;
+  }
+}
